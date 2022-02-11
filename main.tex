@@ -1,0 +1,41 @@
+\documentclass[
+	12pt,
+	a4paper,
+	oneside,
+	titlepage
+]{scrreprt}
+
+
+\input{core/core}
+		% <--- moved here for correct TexStudio sidebar-structure --->
+		% (you can't find references/glossaries otherwise)
+		\addbibresource{references.bib}
+		\input{glossaries}
+		\makeglossaries
+		% <--- end of package related stuff --->
+
+
+
+\begin{document}
+	\input{kapitel/0_Offizielles/Offizielles.tex}
+
+	\tableofcontents
+	\printListOfFigures
+	\printListOfTables
+	\printglossary[type=\acronymtype]
+	
+	\setlist[description]{style=nextline}
+	\printglossary
+	
+	% <--- content start --->
+	\input{kapitel/1_Einleitung/Einleitung.tex}
+	\input{kapitel/2_StandDerTechnik/StandDerTechnik.tex}
+	\input{kapitel/3_Methodik/Methodik.tex}
+	\input{kapitel/4_Implementierung/Implementierung.tex}
+	\input{kapitel/5_Ergebnis/Ergebnis.tex}
+	\input{kapitel/6_Diskussion/Diskussion.tex}
+	\input{kapitel/7_Zusammenfassung/Zusammenfassung.tex}
+	% <---  content end  --->
+	
+	\printbibliography[heading=bibintoc]
+\end{document}
