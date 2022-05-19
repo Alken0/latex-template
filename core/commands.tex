@@ -14,3 +14,18 @@
 	\addcontentsline{toc}{chapter}{\listtablename}
 	\listoftables
 }
+\newcommand{\setPageNumberingToLowercaseRoman}{
+	\pagenumbering{roman}
+}
+
+\newcommand{\setPageNumberingToArabicStartingFromOne}{
+	\cleardoublepage{}
+	\pagenumbering{arabic}
+	\setcounter{page}{1}
+}
+
+\newcommand{\startAppendixIncludingRomanPageNumbering}{
+	\cleardoublepage{}
+	\appendix
+	\pagenumbering{Roman}
+}

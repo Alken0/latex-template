@@ -17,6 +17,8 @@
 
 
 \begin{document}
+	\setPageNumberingToLowercaseRoman
+	
 	\input{kapitel/0_Offizielles/Offizielles.tex}
 
 	\tableofcontents
@@ -26,6 +28,7 @@
 	
 	\setlist[description]{style=nextline}
 	\printglossary
+	\setPageNumberingToArabicStartingFromOne
 	
 	% <--- content start --->
 	\input{kapitel/Anleitung.tex}
@@ -37,6 +40,9 @@
 	\input{kapitel/6_Diskussion/Diskussion.tex}
 	\input{kapitel/7_Zusammenfassung/Zusammenfassung.tex}
 	% <---  content end  --->
+	
+	\startAppendixIncludingRomanPageNumbering
+	\input{kapitel/8_Anhang/Anhang.tex}
 	
 	\printbibliography[heading=bibintoc]
 \end{document}
