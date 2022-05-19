@@ -2,6 +2,7 @@
 *.ist
 *.pdf
 *.glo-abr
+*.equ
 
 ## Core latex/pdflatex auxiliary files:
 *.aux

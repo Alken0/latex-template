@@ -54,3 +54,18 @@
 	\appendix
 	\pagenumbering{Roman}
 }
+
+%%% handle equation printing
+\newcommand{\listequationsname}{Formelverzeichnis}
+\newlistof{myequations}{equ}{\listequationsname}
+\newcommand{\myequations}[1]{%
+	\addcontentsline{equ}{myequations}{\protect\numberline{\theequation}#1}\par}
+\setlength{\cftmyequationsnumwidth}{2.3em}
+\setlength{\cftmyequationsindent}{1.5em}
+
+\newcommand{\printListOfEquations}{
+	\cleardoublepage
+	\phantomsection
+	\addcontentsline{toc}{chapter}{\listequationsname}
+	\listofmyequations
+}
