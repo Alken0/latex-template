@@ -14,6 +14,23 @@ At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergr
 \section{Zitat}
 Zitat \cite{beispiel}
 
+\section{Glossar}
+\subsection{Singular}
+\Gls{glossary:glossar}
+\subsection{Plural}
+\Glspl{glossary:glossar}
+
+\section{Akronym}
+Dokumentation: \url{https://mirror.physik.tu-berlin.de/pub/CTAN/macros/latex/contrib/acro/acro-manual.pdf} 
+\subsection{Automatisch}
+Bei der ersten Verwendung Langform, dann nur noch Kurzform: \Ac{acr:ufo}.
+\subsection{Immer Kurzform}
+\acs{acr:ufo}
+\subsection{Immer Langform}
+\acf{acr:ufo}
+\subsection{Plural}
+\acsp{acr:ufo} oder \acfp{acr:ufo}
+
 \section{Tabelle}
 \begin{table}[H]
 	\caption{Eine Beispiel Tabelle}

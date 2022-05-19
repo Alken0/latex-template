@@ -5,29 +5,24 @@
 	titlepage
 ]{scrreprt}
 
-
 \input{core/core}
-		% <--- moved here for correct TexStudio sidebar-structure --->
-		% (you can't find references/glossaries otherwise)
-		\addbibresource{references.bib}
-		\input{glossaries}
-		\makeglossaries
-		% <--- end of package related stuff --->
+\addbibresource{references.bib}
+\input{acronyms}
+\input{glossaries}
+\enableHyperlinksForGlossariesAndAcronyms % TODO or disable with \disableHyperlinksForGlossariesAndAcronyms
 
-
+\makeglossaries
 
 \begin{document}
 	\setPageNumberingToLowercaseRoman
 	
 	\input{kapitel/0_Offizielles/Offizielles.tex}
-
 	\tableofcontents
 	\printListOfFigures
 	\printListOfTables
-	\printglossary[type=\acronymtype]
+	\printListOfAcronyms
+	\printListOfGlossaries
 	
-	\setlist[description]{style=nextline}
-	\printglossary
 	\setPageNumberingToArabicStartingFromOne
 	
 	% <--- content start --->

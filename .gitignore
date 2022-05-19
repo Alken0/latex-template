@@ -1,6 +1,7 @@
 ## custom
 *.ist
 *.pdf
+*.glo-abr
 
 ## Core latex/pdflatex auxiliary files:
 *.aux

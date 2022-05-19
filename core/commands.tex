@@ -14,6 +14,31 @@
 	\addcontentsline{toc}{chapter}{\listtablename}
 	\listoftables
 }
+
+\newcommand{\printListOfAcronyms}{
+	\cleardoublepage
+	\phantomsection
+	% TODO get name automatically
+	\addcontentsline{toc}{chapter}{Abkürzungen}
+	\printacronyms
+}
+
+\newcommand{\printListOfGlossaries}{
+	\setlist[description]{style=nextline}
+	\printglossary
+	\setlist[description]{} % reset formatting of description lists
+}
+
+\newcommand{\enableHyperlinksForGlossariesAndAcronyms}{
+	\acsetup{make-links} % enables hyperlinks for acronyms
+	%glossary-hyperlinks are enabled by default
+}
+
+\newcommand{\disableHyperlinksForGlossariesAndAcronyms}{
+	% acronym-hyperlinks are disabled by default
+	\glsdisablehyper % disables hyperlinks for glossaries
+}
+
 \newcommand{\setPageNumberingToLowercaseRoman}{
 	\pagenumbering{roman}
 }
