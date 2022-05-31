@@ -8,11 +8,47 @@ Es sollte eine Themeneinführung mit Motivation und groben Projektplan enthalten
 
 ## Main.tex
 
-Das ist ein Template für die eigentliche Arbeit (nach DHBW Vorschrift), das folgendes enthält:
+Das ist ein Template für die wissenschaftliche Arbeit (nach DHBW Vorschrift), das folgendes enthält:
 
 - Titelseite
 - Eidesstattliche Erklärung
-- Inhaltsverzeichnis (2x Latex kompilieren, damit es korrekt aktualisert wird)
-- Kapitelstruktur (Standardstruktur für wissenschaftliche Texte)
-- Abbildungs und Tabellenverzeichnis (falls leer muss es manuell gelöscht werden)
+- Inhaltsverzeichnis
+    - 2x Latex kompilieren, damit es korrekt aktualisert wird
+- Anleitung mit Copy-Paste Snippets
+    - vor der Abgabe löschen :D
+    - enthält z.B.: Tabellen/Bilder/Formeln/Zitate
+- Kapitelstruktur
+    - Standardstruktur für wissenschaftliche Texte
+    - falls deine sehr stark abweicht, schreibst du eventuell keinen wissenschaftlichen Text
+- Abbildungs-, Formel- und Tabellenverzeichnis
+    - falls leer muss es manuell gelöscht werden
+    - es existieren immer Beispiel im Anleitungsteil
 - Literaturverzeichnis
+
+## Wie nutze ich das Template für mein Projekt?
+- oben rechts neben dem Namen auf den Button fork klicken
+- Name + Namespace auswählen und entsprechend Repository generieren lassen
+- dadurch existiert sogar ein GitLab Banner mit Forked aus :D
+
+## Wie kriege ich aktuelle Änderungen aus dem Template in mein Repository?
+
+Voraussetzung: dein Repo muss ein Klon vom Template sein (also z.B. über diese Anleitung erstellt sein)
+
+
+1. Rebase erlauben
+    - Variante 1: "Push-Force"
+        - Links in der Leiste auf Settings/Repository gehen
+        - zu Protected Branches navigieren
+        - das Recht für Push-Force im Main-Branch erlauben 
+        - wichtig, damit du später Rebase auf dem Master durchführen kannst
+    - Variante 2: "anderer Branch"
+        - erstelle einen neuen Branch (Name ist egal)
+        - der Branch darf nicht Push-Force protected sein!
+        - main-branch: zuständig um immer den aktuellen Stand aus dem Template zu haben
+        - dein-branch: alle deine Änderungen für deine Arbeit
+2. Template mit deinem Repository verbinden (alle Befehle lokal im Terminal ausführen)
+    - ```git remote add upstream git@gitlab.cas.de:youth-league/templates/dhbw.git``` 
+    - ```git pull upstream``` 
+    - ```git checkout master```
+    - ```git rebase upstream/master```
+        - am besten mit Tool machen und nicht über Command-Line für eventuelle Konflikte
