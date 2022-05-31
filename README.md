@@ -52,3 +52,5 @@ Voraussetzung: dein Repo muss ein Klon vom Template sein (also z.B. über diese 
     - ```git checkout master```
     - ```git rebase upstream/master```
         - am besten mit Tool machen und nicht über Command-Line für eventuelle Konflikte
+    - ```git push --force```
+        - muss mit Force-Flag geschehen, da sich durch den Rebase die Commit-Hashes ändern
