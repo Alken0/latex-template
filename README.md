@@ -2,11 +2,16 @@
 
 ## OnePager.tex
 
+[Beispiel](/OnePager-example.pdf)
+
 Ist eher für Bachelor-/Masterarbeiten interessant.
 Der OnePager wird vor der Arbeit verfasst, um sich etwas mit dem Thema zu beschäftigen.
 Es sollte eine Themeneinführung mit Motivation und groben Projektplan enthalten.
 
 ## Main.tex
+
+[Beispiel](/main-example.pdf)
+
 
 Das ist ein Template für die wissenschaftliche Arbeit (nach DHBW Vorschrift), das folgendes enthält:
 
