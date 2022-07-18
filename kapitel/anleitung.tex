@@ -57,19 +57,25 @@ Bei der ersten Verwendung Langform, dann nur noch Kurzform: \Ac{acr:ufo}.
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=2cm]{kapitel/offizielles/img/cas}
-	\label{Image:Beispiel1}
 	\caption{Ein Beispiel Bild}
+	\label{Image:Beispiel1}
 \end{figure}
 
 \subsection{Zwei Bilder nebeneinander}
 \begin{figure}[H]
 	\centering
-	\subfigure[Bezeichnung der linken Grafik]{\includegraphics[width=2cm]{kapitel/offizielles/img/cas}}
+	\subfigure[Bezeichnung der linken Grafik]{
+		\includegraphics[width=2cm]{kapitel/offizielles/img/cas}
+		\label{Image:Beispiel2a}
+	}
 	\hspace{1em} % space between images
-	\subfigure[Bezeichnung der rechten Grafik]{\includegraphics[width=2cm]{kapitel/offizielles/img/cas}}
+	\subfigure[Bezeichnung der rechten Grafik]{
+		\includegraphics[width=2cm]{kapitel/offizielles/img/cas}
+		\label{Image:Beispiel2b}
+	}
 	
-	\label{Image:Beispiel2}
 	\caption{Hier steht ein wundervoller Titel}
+	\label{Image:Beispiel2}
 \end{figure}
 
 \section{To Do}
@@ -100,3 +106,11 @@ Das Folgende wird nicht dargestellt:
 \begin{comment}
 	Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
 \end{comment}
+
+\section{Abbildungen, Sections oö. referenzieren}
+\label{Section:cref}
+
+Schau dir doch mal \cref{Image:Beispiel1} an!
+Es ist auch möglich auf die Subfigures \cref{Image:Beispiel2a} und \cref{Image:Beispiel2b} zu verweisen, oder auf die Gesamtgrafik \cref{Image:Beispiel2}.
+
+Ist \cref{Section:cref} nicht ein tolles Kapitel?
