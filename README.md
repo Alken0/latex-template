@@ -1,5 +1,15 @@
 # Template für die DHBW
 
+## Literaturverwaltung
+- Allgemein
+    - sehr wichtig zu verwenden
+    - Autoimport von Quellen immer direkt am Anfang auf Richtigkeit überprüfen
+    - am besten vorher informieren, was das beste Produkte ist, da ein Umstieg während einer Arbeit nicht mehr möglich ist
+- Produkte
+    - Citavi
+        - Webversion ist extrem langsam -> Desktop-Client nutzen (idealerweise mit lokalem Projekt)
+    - [Zotero & Obsidian](https://www.marianamontes.me/post/obsidian-and-zotero/)
+
 ## OnePager.tex
 
 [Beispiel](/OnePager-example.pdf)
